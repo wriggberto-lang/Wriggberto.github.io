@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wriggberto Castro | Dev Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-bracket"><</span>
+        <span class="logo-name">Wriggberto</span>
+        <span class="logo-bracket">/></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponível para oportunidades
+      </div>
+      <h1 class="hero-title">
+        Olá, eu sou<br/>
+        <span class="gradient-text">Wriggberto Castro</span>
+      </h1>
+      <p class="hero-subtitle">
+        Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong><br/>
+        apaixonado por <span class="highlight">Web Dev</span> & <span class="highlight">APIs</span>
+      </p>
+      <div class="hero-location">
+        <i class="fas fa-map-marker-alt"></i>
+        Brasília, DF — Brasil
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> Ver Projetos
+        </a>
+        <a href="https://wa.me/5561994613995" target="_blank" class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Contato
+        </a>
+      </div>
+      <div class="hero-scroll">
+        <span>Role para baixo</span>
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-filename">dev.js</span>
+        </div>
+        <div class="code-body">
+<pre><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Wriggberto Castro"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"ADS Student"</span>,
+  <span class="c-prop">location</span>: <span class="c-str">"Brasília, DF"</span>,
+  <span class="c-prop">skills</span>: [
+    <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>,
+    <span class="c-str">"JavaScript"</span>, <span class="c-str">"APIs"</span>
+  ],
+  <span class="c-prop">empresa</span>: <span class="c-str">"Pixerly"</span>,
+  <span class="c-prop">whatsapp</span>: <span class="c-str">"61994613995"</span>,
+  <span class="c-prop">status</span>: <span class="c-str">"Disponível 🚀"</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// sobre mim</span>
+        <h2 class="section-title">Quem sou eu?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-col">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <div class="avatar-img">
+              <!-- SUA FOTO PROFISSIONAL -->
+              <img src="foto-perfil.jpg" alt="Foto profissional de Wriggberto Castro Furtado">
+            </div>
+            <div class="avatar-badge">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">ADS</span>
+              <span class="stat-label">Graduação em Curso</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">BSB</span>
+              <span class="stat-label">Brasília, DF</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">01</span>
+              <span class="stat-label">Empresa Própria</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p class="about-lead">
+            Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> no
+            <strong>Centro Universitário de Brasília (CEUB)</strong>, com foco em construir
+            soluções digitais modernas e funcionais.
+          </p>
+          <p class="about-body">
+            Minha paixão está no <strong>desenvolvimento web</strong> — criar interfaces bonitas,
+            responsivas e integradas com <strong>APIs poderosas</strong>. Acredito que cada linha
+            de código tem o potencial de resolver um problema real.
+          </p>
+          <p class="about-body">
+            Além dos estudos, desenvolvo a <strong>Pixerly</strong>, meu projeto
+            empreendedor focado em tecnologia e criatividade digital.
+          </p>
+          <div class="about-tags">
+            <span class="tag"><i class="fas fa-university"></i> CEUB</span>
+            <span class="tag"><i class="fas fa-map-pin"></i> Brasília, DF</span>
+            <span class="tag"><i class="fas fa-building"></i> Pixerly</span>
+            <span class="tag"><i class="fas fa-code"></i> Web Dev</span>
+            <span class="tag"><i class="fas fa-plug"></i> APIs</span>
+          </div>
+          <div class="about-actions">
+            <a href="mailto:wriggbertofurtado@gmail.com" class="btn btn-primary btn-sm">
+              <i class="fas fa-paper-plane"></i> Enviar Email
+            </a>
+            <a href="https://wa.me/5561994613995" target="_blank" class="btn btn-whatsapp btn-sm">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// tecnologias</span>
+        <h2 class="section-title">Minhas Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #e34f26, #f06529);">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="skill-info">
+            <span class="skill-name">HTML5</span>
+            <span class="skill-level">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85" style="background: linear-gradient(90deg, #e34f26, #f06529);"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #264de4, #2965f1);">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="skill-info">
+            <span class="skill-name">CSS3</span>
+            <span class="skill-level">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="80" style="background: linear-gradient(90deg, #264de4, #2965f1);"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #f7df1e, #f0c132);">
+            <i class="fab fa-js-square" style="color:#333;"></i>
+          </div>
+          <div class="skill-info">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-level">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="75" style="background: linear-gradient(90deg, #f7df1e, #f0c132);"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #00b4d8, #0096c7);">
+            <i class="fas fa-plug"></i>
+          </div>
+          <div class="skill-info">
+            <span class="skill-name">APIs REST</span>
+            <span class="skill-level">70%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="70" style="background: linear-gradient(90deg, #00b4d8, #0096c7);"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #f05032, #e8452c);">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <div class="skill-info">
+            <span class="skill-name">Git & GitHub</span>
+            <span class="skill-level">65%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="65" style="background: linear-gradient(90deg, #f05032, #e8452c);"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon" style="background: linear-gradient(135deg, #7c3aed, #6d28d9);">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="skill-info">
+            <span class="skill-name">Responsive Design</span>
+            <span class="skill-level">60%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="60" style="background: linear-gradient(90deg, #7c3aed, #6d28d9);"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// projetos</span>
+        <h2 class="section-title">O que estou construindo</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-top">
+            <div class="project-icon-wrap">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Repositório" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" title="Demo" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-badge">Projeto Principal</div>
+          <h3 class="project-title">Pixerly</h3>
+          <p class="project-desc">
+            Minha empresa em desenvolvimento, focada em soluções criativas e digitais.
+            Um projeto que une minha paixão por tecnologia com empreendedorismo.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">APIs</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon-wrap">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Repositório" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" title="Demo" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Web App com API</h3>
+          <p class="project-desc">
+            Aplicação web que consome APIs externas para exibir dados em tempo real,
+            com interface responsiva e experiência de usuário fluída.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">Fetch API</span>
+            <span class="stack-tag">JSON</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon-wrap">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Repositório" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" title="Demo" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Landing Page Responsiva</h3>
+          <p class="project-desc">
+            Desenvolvimento de landing pages modernas com foco em design,
+            performance e boas práticas de HTML semântico e CSS moderno.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML5</span>
+            <span class="stack-tag">CSS3</span>
+            <span class="stack-tag">Flexbox</span>
+            <span class="stack-tag">Grid</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// contato</span>
+        <h2 class="section-title">Vamos conversar?</h2>
+        <p class="section-sub">Aberto para oportunidades, colaborações e novos projetos!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-label">Email Profissional</span>
+              <a href="mailto:wriggbertofurtado@gmail.com" class="contact-value">
+                wriggbertofurtado@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon" style="background: rgba(37,211,102,0.12); border-color: rgba(37,211,102,0.3); color: #25d366;">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-label">WhatsApp / Telefone</span>
+              <a href="https://wa.me/5561994613995" target="_blank" class="contact-value">
+                (61) 9 9461-3995
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-label">Localização</span>
+              <span class="contact-value">Brasília, DF — Brasil</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-label">Faculdade</span>
+              <span class="contact-value">CEUB — ADS</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-label">Empresa</span>
+              <span class="contact-value">Pixerly</span>
+            </div>
+          </div>
+
+          <!-- QR CODE WHATSAPP -->
+          <div class="qr-card">
+            <div class="qr-header">
+              <i class="fab fa-whatsapp"></i>
+              <span>Escaneie para falar comigo</span>
+            </div>
+            <div class="qr-wrapper">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://wa.me/5561994613995&color=25d366&bgcolor=12121a&qzone=1"
+                alt="QR Code WhatsApp Wriggberto"
+                class="qr-img"
+              />
+            </div>
+            <p class="qr-label">(61) 9 9461-3995</p>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:wriggbertofurtado@gmail.com" class="social-btn" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/5561994613995" target="_blank" class="social-btn social-btn-wa" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" class="social-btn" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="social-btn" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="seu@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" placeholder="Sobre o que deseja falar?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" rows="5" placeholder="Sua mensagem aqui..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+          </button>
+          <a href="https://wa.me/5561994613995" target="_blank" class="btn btn-whatsapp btn-full" style="margin-top:12px;">
+            <i class="fab fa-whatsapp"></i> Ou fale direto no WhatsApp
+          </a>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Mensagem enviada com sucesso!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket"><</span>
+          <span class="logo-name">Wriggberto</span>
+          <span class="logo-bracket">/></span>
+        </div>
+        <p class="footer-text">
+          Desenvolvido com <span class="heart">♥</span> por Wriggberto Castro Furtado
+        </p>
+        <p class="footer-copy">© 2026 · Pixerly · Brasília, DF</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5561994613995" target="_blank" class="whatsapp-float" aria-label="Fale comigo no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-float-label">Fale comigo!</span>
+  </a>
+
+</body>
+</html>
